@@ -1,0 +1,112 @@
+from flask import Blueprint, request, jsonify, current_app
+from .utils import auth_required
+from ..models import db, Lesson, Course
+from .courses import courses_bp
+
+lessons_bp = Blueprint('lessons',__name__,url_prefix="/api/v1/lessons")
+
+
+# 创建课程
+@auth_required
+def create_lesson(user_id):
+    course_id = request.json.get('course_id')
+    name = request.json.get('name')
+    content = request.json.get('content')
+    video_url = request.json.get('video_url')
+
+    # 验证用户是否有权创建该课时
+    course = Course.query.filter_by(id=course_id, user_id=user_id).first()
+    if course is None:
+        return jsonify({'error': 'No permission to create lesson in the course.'}), 403
+
+    # 创建课时
+    lesson = Lesson(course_id=course_id, name=name, content=content, video_url=video_url)
+    db.session.add(lesson)
+    db.session.commit()
+
+    return jsonify({'id': lesson.id}), 201
+
+
+# 获取一个课程中所有的Lesson
+def get_lessons_by_course(course_id):
+    course = Course.query.filter_by(id=course_id).first()
+    if not course:
+        return jsonify({'message': 'Course not found'}), 404
+
+    lessons = Lesson.query.filter_by(course_id=course_id).all()
+
+    result = []
+    for lesson in lessons:
+        lesson_data = {
+            'id': lesson.id,
+            'course_id': lesson.course_id,
+            'name': lesson.name,
+        }
+        result.append(lesson_data)
+
+    return jsonify(result), 200
+
+# 获取一个Lesson的详细内容
+def get_lesson_info(lesson_id):
+    lesson = Lesson.query.get(lesson_id)
+    if not lesson:
+        return jsonify({'message': 'Lesson not found.'}), 404
+    course = Course.query.get(lesson.course_id)
+    return jsonify({
+        'id': lesson.id,
+        'course_id': lesson.course_id,
+        'course_title': course.title,
+        'name': lesson.name,
+        'content': lesson.content,
+        'video_url': lesson.video_url,
+        'create_time': lesson.create_time.strftime('%Y-%m-%d %H:%M:%S'),
+        'update_time': lesson.update_time.strftime('%Y-%m-%d %H:%M:%S')
+    })
+
+# 更改课时信息
+# @app.route('/lessons/<int:lesson_id>', methods=['PUT'])
+@auth_required
+def update_lesson(lesson_id, user_id):
+    lesson = Lesson.query.get(lesson_id)
+    if not lesson:
+        return jsonify({'error': 'Lesson not found'}), 404
+    
+    course = Course.query.get(lesson.course_id)
+    if not course:
+        return jsonify({'error': 'Course not found'}), 404
+    
+    if course.user_id != user_id:
+        return jsonify({'error': 'You are not authorized to perform this action'}), 401
+    
+    request_data = request.get_json()
+    if 'name' in request_data:
+        lesson.name = request_data['name']
+    if 'content' in request_data:
+        lesson.content = request_data['content']
+    if 'video_url' in request_data:
+        lesson.video_url = request_data['video_url']
+
+    db.session.commit()
+
+    return jsonify({'success': 'Lesson updated successfully'}), 200
+
+
+
+@auth_required
+def delete_lesson(lesson_id, user_id):
+    lesson = Lesson.query.get(lesson_id)
+    if lesson is None:
+        return jsonify({'error': 'Lesson not found'}), 404
+    course = Course.query.get(lesson.course_id)
+    if course.user_id != user_id:
+        return jsonify({'error': 'You are not authorized to perform this action'}), 401
+    db.session.delete(lesson)
+    db.session.commit()
+    return jsonify({'message': 'Lesson deleted successfully'})
+
+
+lessons_bp.add_url_rule("/", view_func=create_lesson, methods=["POST"])
+courses_bp.add_url_rule("/<int:course_id>/lessons", view_func=get_lessons_by_course, methods=["GET"])
+lessons_bp.add_url_rule("/<int:lesson_id>", view_func=get_lesson_info, methods=["GET"])
+lessons_bp.add_url_rule("/<int:lesson_id>", view_func=update_lesson, methods=["PUT"])
+lessons_bp.add_url_rule("/<int:lesson_id>", view_func=delete_lesson, methods=["DELETE"])
