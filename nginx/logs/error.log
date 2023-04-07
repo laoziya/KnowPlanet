@@ -1,0 +1,553 @@
+2023/03/25 05:44:40 [notice] 1#1: using the "epoll" event method
+2023/03/25 05:44:40 [notice] 1#1: nginx/1.23.3
+2023/03/25 05:44:40 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/03/25 05:44:40 [notice] 1#1: OS: Linux 3.10.0-1160.el7.x86_64
+2023/03/25 05:44:40 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/03/25 05:44:40 [notice] 1#1: start worker processes
+2023/03/25 05:44:40 [notice] 1#1: start worker process 29
+2023/03/25 05:46:14 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/03/25 05:46:14 [notice] 29#29: gracefully shutting down
+2023/03/25 05:46:14 [notice] 29#29: exiting
+2023/03/25 05:46:14 [notice] 29#29: exit
+2023/03/25 05:46:14 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2023/03/25 05:46:14 [notice] 1#1: worker process 29 exited with code 0
+2023/03/25 05:46:14 [notice] 1#1: exit
+2023/03/25 05:46:27 [notice] 1#1: using the "epoll" event method
+2023/03/25 05:46:27 [notice] 1#1: nginx/1.23.3
+2023/03/25 05:46:27 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/03/25 05:46:27 [notice] 1#1: OS: Linux 3.10.0-1160.el7.x86_64
+2023/03/25 05:46:27 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/03/25 05:46:27 [notice] 1#1: start worker processes
+2023/03/25 05:46:27 [notice] 1#1: start worker process 22
+2023/03/25 05:49:41 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/03/25 05:49:41 [notice] 22#22: gracefully shutting down
+2023/03/25 05:49:41 [notice] 22#22: exiting
+2023/03/25 05:49:41 [notice] 22#22: exit
+2023/03/25 05:49:41 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/03/25 05:49:41 [notice] 1#1: worker process 22 exited with code 0
+2023/03/25 05:49:41 [notice] 1#1: exit
+2023/03/25 05:49:41 [emerg] 1#1: "location" directive is not allowed here in /etc/nginx/nginx.conf:34
+2023/03/25 05:49:41 [emerg] 1#1: "location" directive is not allowed here in /etc/nginx/nginx.conf:34
+2023/03/25 05:49:41 [emerg] 1#1: "location" directive is not allowed here in /etc/nginx/nginx.conf:34
+2023/03/25 05:49:42 [emerg] 1#1: "location" directive is not allowed here in /etc/nginx/nginx.conf:34
+2023/03/25 05:49:43 [emerg] 1#1: "location" directive is not allowed here in /etc/nginx/nginx.conf:34
+2023/03/25 05:49:45 [emerg] 1#1: "location" directive is not allowed here in /etc/nginx/nginx.conf:34
+2023/03/25 05:49:48 [emerg] 1#1: "location" directive is not allowed here in /etc/nginx/nginx.conf:34
+2023/03/25 05:49:55 [emerg] 1#1: "location" directive is not allowed here in /etc/nginx/nginx.conf:34
+2023/03/25 05:50:08 [emerg] 1#1: "location" directive is not allowed here in /etc/nginx/nginx.conf:34
+2023/03/25 05:50:33 [emerg] 1#1: "location" directive is not allowed here in /etc/nginx/nginx.conf:34
+2023/03/25 05:51:25 [emerg] 1#1: "location" directive is not allowed here in /etc/nginx/nginx.conf:34
+2023/03/25 05:52:25 [emerg] 1#1: "location" directive is not allowed here in /etc/nginx/nginx.conf:34
+2023/03/25 05:53:25 [notice] 1#1: using the "epoll" event method
+2023/03/25 05:53:25 [notice] 1#1: nginx/1.23.3
+2023/03/25 05:53:25 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/03/25 05:53:25 [notice] 1#1: OS: Linux 3.10.0-1160.el7.x86_64
+2023/03/25 05:53:25 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/03/25 05:53:25 [notice] 1#1: start worker processes
+2023/03/25 05:53:25 [notice] 1#1: start worker process 22
+2023/03/25 05:56:19 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/03/25 05:56:19 [notice] 22#22: gracefully shutting down
+2023/03/25 05:56:19 [notice] 22#22: exiting
+2023/03/25 05:56:19 [notice] 22#22: exit
+2023/03/25 05:56:19 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/03/25 05:56:19 [notice] 1#1: worker process 22 exited with code 0
+2023/03/25 05:56:19 [notice] 1#1: exit
+2023/03/25 05:56:19 [notice] 1#1: using the "epoll" event method
+2023/03/25 05:56:19 [notice] 1#1: nginx/1.23.3
+2023/03/25 05:56:19 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/03/25 05:56:19 [notice] 1#1: OS: Linux 3.10.0-1160.el7.x86_64
+2023/03/25 05:56:19 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/03/25 05:56:19 [notice] 1#1: start worker processes
+2023/03/25 05:56:19 [notice] 1#1: start worker process 22
+2023/03/25 05:57:55 [error] 22#22: *1 directory index of "/usr/share/nginx/html/" is forbidden, client: 192.168.220.1, server: localhost, request: "GET / HTTP/1.1", host: "192.168.220.110"
+2023/03/25 05:57:56 [error] 22#22: *1 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.168.220.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "192.168.220.110", referrer: "http://192.168.220.110/"
+2023/03/25 05:58:04 [error] 22#22: *1 directory index of "/usr/share/nginx/html/images/" is forbidden, client: 192.168.220.1, server: localhost, request: "GET /images/ HTTP/1.1", host: "192.168.220.110"
+2023/03/25 05:58:11 [error] 22#22: *1 directory index of "/usr/share/nginx/html/images/" is forbidden, client: 192.168.220.1, server: localhost, request: "GET /images/ HTTP/1.1", host: "192.168.220.110"
+2023/03/25 06:01:51 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/03/25 06:01:51 [notice] 22#22: gracefully shutting down
+2023/03/25 06:01:51 [notice] 22#22: exiting
+2023/03/25 06:01:51 [notice] 22#22: exit
+2023/03/25 06:01:51 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/03/25 06:01:51 [notice] 1#1: worker process 22 exited with code 0
+2023/03/25 06:01:51 [notice] 1#1: exit
+2023/03/25 06:01:51 [notice] 1#1: using the "epoll" event method
+2023/03/25 06:01:51 [notice] 1#1: nginx/1.23.3
+2023/03/25 06:01:51 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/03/25 06:01:51 [notice] 1#1: OS: Linux 3.10.0-1160.el7.x86_64
+2023/03/25 06:01:51 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/03/25 06:01:51 [notice] 1#1: start worker processes
+2023/03/25 06:01:51 [notice] 1#1: start worker process 22
+2023/03/25 06:02:01 [error] 22#22: *1 directory index of "/usr/share/nginx/html/images/" is forbidden, client: 192.168.220.1, server: localhost, request: "GET /images/ HTTP/1.1", host: "192.168.220.110"
+2023/03/25 06:02:02 [error] 22#22: *1 directory index of "/usr/share/nginx/html/images/" is forbidden, client: 192.168.220.1, server: localhost, request: "GET /images/ HTTP/1.1", host: "192.168.220.110"
+2023/03/25 06:02:03 [error] 22#22: *1 directory index of "/usr/share/nginx/html/images/" is forbidden, client: 192.168.220.1, server: localhost, request: "GET /images/ HTTP/1.1", host: "192.168.220.110"
+2023/03/25 06:03:19 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/03/25 06:03:19 [notice] 22#22: gracefully shutting down
+2023/03/25 06:03:19 [notice] 22#22: exiting
+2023/03/25 06:03:19 [notice] 22#22: exit
+2023/03/25 06:03:19 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/03/25 06:03:19 [notice] 1#1: worker process 22 exited with code 0
+2023/03/25 06:03:19 [notice] 1#1: exit
+2023/03/25 06:03:24 [notice] 1#1: using the "epoll" event method
+2023/03/25 06:03:24 [notice] 1#1: nginx/1.23.3
+2023/03/25 06:03:24 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/03/25 06:03:24 [notice] 1#1: OS: Linux 3.10.0-1160.el7.x86_64
+2023/03/25 06:03:24 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/03/25 06:03:24 [notice] 1#1: start worker processes
+2023/03/25 06:03:24 [notice] 1#1: start worker process 22
+2023/03/25 06:03:30 [error] 22#22: *1 directory index of "/usr/share/nginx/html/images/" is forbidden, client: 192.168.220.1, server: localhost, request: "GET /images/ HTTP/1.1", host: "192.168.220.110"
+2023/03/25 06:03:32 [error] 22#22: *1 directory index of "/usr/share/nginx/html/images/" is forbidden, client: 192.168.220.1, server: localhost, request: "GET /images/ HTTP/1.1", host: "192.168.220.110"
+2023/03/25 06:04:40 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/03/25 06:04:40 [notice] 22#22: gracefully shutting down
+2023/03/25 06:04:40 [notice] 22#22: exiting
+2023/03/25 06:04:40 [notice] 22#22: exit
+2023/03/25 06:04:40 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/03/25 06:04:40 [notice] 1#1: worker process 22 exited with code 0
+2023/03/25 06:04:40 [notice] 1#1: exit
+2023/03/25 06:04:40 [notice] 1#1: using the "epoll" event method
+2023/03/25 06:04:40 [notice] 1#1: nginx/1.23.3
+2023/03/25 06:04:40 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/03/25 06:04:40 [notice] 1#1: OS: Linux 3.10.0-1160.el7.x86_64
+2023/03/25 06:04:40 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/03/25 06:04:40 [notice] 1#1: start worker processes
+2023/03/25 06:04:40 [notice] 1#1: start worker process 22
+2023/03/25 06:04:44 [error] 22#22: *1 directory index of "/usr/share/nginx/html/images/" is forbidden, client: 192.168.220.1, server: localhost, request: "GET /images/ HTTP/1.1", host: "192.168.220.110"
+2023/03/25 06:04:45 [error] 22#22: *1 directory index of "/usr/share/nginx/html/images/" is forbidden, client: 192.168.220.1, server: localhost, request: "GET /images/ HTTP/1.1", host: "192.168.220.110"
+2023/03/25 06:08:36 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/03/25 06:08:36 [notice] 22#22: gracefully shutting down
+2023/03/25 06:08:36 [notice] 22#22: exiting
+2023/03/25 06:08:36 [notice] 22#22: exit
+2023/03/25 06:08:36 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/03/25 06:08:36 [notice] 1#1: worker process 22 exited with code 0
+2023/03/25 06:08:36 [notice] 1#1: exit
+2023/03/25 06:08:36 [notice] 1#1: using the "epoll" event method
+2023/03/25 06:08:36 [notice] 1#1: nginx/1.23.3
+2023/03/25 06:08:36 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/03/25 06:08:36 [notice] 1#1: OS: Linux 3.10.0-1160.el7.x86_64
+2023/03/25 06:08:36 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/03/25 06:08:36 [notice] 1#1: start worker processes
+2023/03/25 06:08:36 [notice] 1#1: start worker process 22
+2023/03/25 06:08:43 [error] 22#22: *1 directory index of "/usr/share/nginx/html/avatar/" is forbidden, client: 192.168.220.1, server: localhost, request: "GET /avatar/ HTTP/1.1", host: "192.168.220.110"
+2023/03/25 06:08:52 [error] 22#22: *1 open() "/usr/share/nginx/html/avatar/kunkun.png" failed (2: No such file or directory), client: 192.168.220.1, server: localhost, request: "GET /avatar/kunkun.png HTTP/1.1", host: "192.168.220.110"
+2023/03/25 06:10:28 [error] 22#22: *3 open() "/usr/share/nginx/html/images/kunkun.png" failed (2: No such file or directory), client: 192.168.220.1, server: localhost, request: "GET /images/kunkun.png HTTP/1.1", host: "192.168.220.110"
+2023/03/25 15:38:22 [notice] 1#1: using the "epoll" event method
+2023/03/25 15:38:22 [notice] 1#1: nginx/1.23.3
+2023/03/25 15:38:22 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/03/25 15:38:22 [notice] 1#1: OS: Linux 3.10.0-1160.el7.x86_64
+2023/03/25 15:38:22 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/03/25 15:38:22 [notice] 1#1: start worker processes
+2023/03/25 15:38:22 [notice] 1#1: start worker process 22
+2023/03/25 15:42:22 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/03/25 15:42:22 [notice] 22#22: gracefully shutting down
+2023/03/25 15:42:22 [notice] 22#22: exiting
+2023/03/25 15:42:22 [notice] 22#22: exit
+2023/03/25 15:42:22 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/03/25 15:42:22 [notice] 1#1: worker process 22 exited with code 0
+2023/03/25 15:42:22 [notice] 1#1: exit
+2023/03/26 04:16:42 [notice] 1#1: using the "epoll" event method
+2023/03/26 04:16:42 [notice] 1#1: nginx/1.23.3
+2023/03/26 04:16:42 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/03/26 04:16:42 [notice] 1#1: OS: Linux 3.10.0-1160.el7.x86_64
+2023/03/26 04:16:42 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/03/26 04:16:42 [notice] 1#1: start worker processes
+2023/03/26 04:16:42 [notice] 1#1: start worker process 22
+2023/03/26 13:05:12 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/03/26 13:05:12 [notice] 22#22: gracefully shutting down
+2023/03/26 13:05:12 [notice] 22#22: exiting
+2023/03/26 13:05:12 [notice] 22#22: exit
+2023/03/26 13:05:12 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/03/26 13:05:12 [notice] 1#1: worker process 22 exited with code 0
+2023/03/26 13:05:12 [notice] 1#1: exit
+2023/03/27 11:01:33 [notice] 1#1: using the "epoll" event method
+2023/03/27 11:01:33 [notice] 1#1: nginx/1.23.3
+2023/03/27 11:01:33 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/03/27 11:01:33 [notice] 1#1: OS: Linux 3.10.0-1160.el7.x86_64
+2023/03/27 11:01:33 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/03/27 11:01:33 [notice] 1#1: start worker processes
+2023/03/27 11:01:33 [notice] 1#1: start worker process 21
+2023/03/27 13:33:56 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/03/27 13:33:56 [notice] 21#21: gracefully shutting down
+2023/03/27 13:33:56 [notice] 21#21: exiting
+2023/03/27 13:33:56 [notice] 21#21: exit
+2023/03/27 13:33:56 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/03/27 13:33:56 [notice] 1#1: worker process 21 exited with code 0
+2023/03/27 13:33:56 [notice] 1#1: exit
+2023/03/28 01:58:50 [notice] 1#1: using the "epoll" event method
+2023/03/28 01:58:50 [notice] 1#1: nginx/1.23.3
+2023/03/28 01:58:50 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/03/28 01:58:50 [notice] 1#1: OS: Linux 3.10.0-1160.el7.x86_64
+2023/03/28 01:58:50 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/03/28 01:58:50 [notice] 1#1: start worker processes
+2023/03/28 01:58:50 [notice] 1#1: start worker process 22
+2023/03/28 05:43:47 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/03/28 05:43:47 [notice] 22#22: gracefully shutting down
+2023/03/28 05:43:47 [notice] 22#22: exiting
+2023/03/28 05:43:47 [notice] 22#22: exit
+2023/03/28 05:43:47 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/03/28 05:43:47 [notice] 1#1: worker process 22 exited with code 0
+2023/03/28 05:43:47 [notice] 1#1: exit
+2023/03/28 05:44:06 [notice] 1#1: using the "epoll" event method
+2023/03/28 05:44:06 [notice] 1#1: nginx/1.23.3
+2023/03/28 05:44:06 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/03/28 05:44:06 [notice] 1#1: OS: Linux 3.10.0-1160.el7.x86_64
+2023/03/28 05:44:06 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/03/28 05:44:06 [notice] 1#1: start worker processes
+2023/03/28 05:44:06 [notice] 1#1: start worker process 21
+2023/03/28 08:30:22 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/03/28 08:30:22 [notice] 21#21: gracefully shutting down
+2023/03/28 08:30:22 [notice] 21#21: exiting
+2023/03/28 08:30:22 [notice] 21#21: exit
+2023/03/28 08:30:22 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/03/28 08:30:22 [notice] 1#1: worker process 21 exited with code 0
+2023/03/28 08:30:22 [notice] 1#1: exit
+2023/03/28 08:30:22 [warn] 1#1: conflicting server name "" on 0.0.0.0:80, ignored
+2023/03/28 08:30:22 [notice] 1#1: using the "epoll" event method
+2023/03/28 08:30:22 [notice] 1#1: nginx/1.23.3
+2023/03/28 08:30:22 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/03/28 08:30:22 [notice] 1#1: OS: Linux 3.10.0-1160.el7.x86_64
+2023/03/28 08:30:22 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/03/28 08:30:22 [notice] 1#1: start worker processes
+2023/03/28 08:30:22 [notice] 1#1: start worker process 22
+2023/03/28 08:30:45 [error] 22#22: *1 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.168.220.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "192.168.220.110", referrer: "http://192.168.220.110/comment/12Linux.pdf"
+2023/03/28 13:36:04 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/03/28 13:36:05 [notice] 22#22: gracefully shutting down
+2023/03/28 13:36:05 [notice] 22#22: exiting
+2023/03/28 13:36:05 [notice] 22#22: exit
+2023/03/28 13:36:05 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/03/28 13:36:05 [notice] 1#1: worker process 22 exited with code 0
+2023/03/28 13:36:05 [notice] 1#1: exit
+2023/03/29 03:13:07 [warn] 1#1: conflicting server name "" on 0.0.0.0:80, ignored
+2023/03/29 03:13:07 [notice] 1#1: using the "epoll" event method
+2023/03/29 03:13:07 [notice] 1#1: nginx/1.23.3
+2023/03/29 03:13:07 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/03/29 03:13:07 [notice] 1#1: OS: Linux 3.10.0-1160.el7.x86_64
+2023/03/29 03:13:07 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/03/29 03:13:07 [notice] 1#1: start worker processes
+2023/03/29 03:13:07 [notice] 1#1: start worker process 22
+2023/03/30 12:10:18 [error] 22#22: *2 open() "/etc/nginx/html/avatar/512ea4e1-197f-47b6-af26-8dbad0e390a4.png" failed (2: No such file or directory), client: 192.168.220.1, server: , request: "GET /avatar/512ea4e1-197f-47b6-af26-8dbad0e390a4.png HTTP/1.1", host: "192.168.220.110", referrer: "http://192.168.220.110:8080/"
+2023/03/30 12:10:38 [error] 22#22: *3 open() "/etc/nginx/html/avatar/512ea4e1-197f-47b6-af26-8dbad0e390a4.png" failed (2: No such file or directory), client: 192.168.220.1, server: , request: "GET /avatar/512ea4e1-197f-47b6-af26-8dbad0e390a4.png HTTP/1.1", host: "192.168.220.110"
+2023/03/30 12:10:39 [error] 22#22: *3 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.168.220.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "192.168.220.110", referrer: "http://192.168.220.110/avatar/512ea4e1-197f-47b6-af26-8dbad0e390a4.png"
+2023/03/30 12:13:28 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/03/30 12:13:28 [notice] 22#22: gracefully shutting down
+2023/03/30 12:13:28 [notice] 22#22: exiting
+2023/03/30 12:13:28 [notice] 22#22: exit
+2023/03/30 12:13:29 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/03/30 12:13:29 [notice] 1#1: worker process 22 exited with code 0
+2023/03/30 12:13:29 [notice] 1#1: exit
+2023/03/30 12:13:37 [warn] 1#1: conflicting server name "" on 0.0.0.0:80, ignored
+2023/03/30 12:13:37 [notice] 1#1: using the "epoll" event method
+2023/03/30 12:13:37 [notice] 1#1: nginx/1.23.3
+2023/03/30 12:13:37 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/03/30 12:13:37 [notice] 1#1: OS: Linux 3.10.0-1160.el7.x86_64
+2023/03/30 12:13:37 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/03/30 12:13:37 [notice] 1#1: start worker processes
+2023/03/30 12:13:37 [notice] 1#1: start worker process 22
+2023/03/30 12:13:57 [error] 22#22: *1 open() "/etc/nginx/html/avatar/512ea4e1-197f-47b6-af26-8dbad0e390a4.png" failed (2: No such file or directory), client: 192.168.220.1, server: , request: "GET /avatar/512ea4e1-197f-47b6-af26-8dbad0e390a4.png HTTP/1.1", host: "192.168.220.110"
+2023/03/30 12:13:59 [error] 22#22: *1 open() "/etc/nginx/html/avatar/512ea4e1-197f-47b6-af26-8dbad0e390a4.png" failed (2: No such file or directory), client: 192.168.220.1, server: , request: "GET /avatar/512ea4e1-197f-47b6-af26-8dbad0e390a4.png HTTP/1.1", host: "192.168.220.110"
+2023/03/30 12:17:26 [error] 22#22: *3 open() "/etc/nginx/html/avatar/512ea4e1-197f-47b6-af26-8dbad0e390a4.png" failed (2: No such file or directory), client: 192.168.220.1, server: , request: "GET /avatar/512ea4e1-197f-47b6-af26-8dbad0e390a4.png HTTP/1.1", host: "192.168.220.110"
+2023/03/30 12:18:26 [error] 22#22: *3 "/etc/nginx/html/avatar/index.html" is not found (2: No such file or directory), client: 192.168.220.1, server: , request: "GET /avatar/ HTTP/1.1", host: "192.168.220.110"
+2023/03/30 12:19:34 [error] 22#22: *6 open() "/etc/nginx/html/avatar/kuku.com" failed (2: No such file or directory), client: 192.168.220.1, server: , request: "GET /avatar/kuku.com HTTP/1.1", host: "192.168.220.110"
+2023/03/30 12:19:38 [error] 22#22: *6 open() "/etc/nginx/html/avatar/kuku.png" failed (2: No such file or directory), client: 192.168.220.1, server: , request: "GET /avatar/kuku.png HTTP/1.1", host: "192.168.220.110"
+2023/03/30 12:19:45 [error] 22#22: *6 open() "/etc/nginx/html/avatar/kunkun.png" failed (2: No such file or directory), client: 192.168.220.1, server: , request: "GET /avatar/kunkun.png HTTP/1.1", host: "192.168.220.110"
+2023/03/30 12:21:49 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/03/30 12:21:49 [notice] 22#22: gracefully shutting down
+2023/03/30 12:21:49 [notice] 22#22: exiting
+2023/03/30 12:21:49 [notice] 22#22: exit
+2023/03/30 12:21:49 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/03/30 12:21:49 [notice] 1#1: worker process 22 exited with code 0
+2023/03/30 12:21:49 [notice] 1#1: exit
+2023/03/30 12:21:49 [warn] 1#1: conflicting server name "" on 0.0.0.0:80, ignored
+2023/03/30 12:21:49 [warn] 1#1: conflicting server name "" on 0.0.0.0:80, ignored
+2023/03/30 12:21:49 [notice] 1#1: using the "epoll" event method
+2023/03/30 12:21:49 [notice] 1#1: nginx/1.23.3
+2023/03/30 12:21:49 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/03/30 12:21:49 [notice] 1#1: OS: Linux 3.10.0-1160.el7.x86_64
+2023/03/30 12:21:49 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/03/30 12:21:49 [notice] 1#1: start worker processes
+2023/03/30 12:21:49 [notice] 1#1: start worker process 22
+2023/03/30 12:22:04 [error] 22#22: *1 open() "/etc/nginx/html/avatar/512ea4e1-197f-47b6-af26-8dbad0e390a4.png" failed (2: No such file or directory), client: 192.168.220.1, server: , request: "GET /avatar/512ea4e1-197f-47b6-af26-8dbad0e390a4.png HTTP/1.1", host: "192.168.220.110", referrer: "http://192.168.220.110:8080/"
+2023/03/30 12:22:46 [error] 22#22: *2 open() "/etc/nginx/html/avatar/512ea4e1-197f-47b6-af26-8dbad0e390a4.png" failed (2: No such file or directory), client: 192.168.220.1, server: , request: "GET /avatar/512ea4e1-197f-47b6-af26-8dbad0e390a4.png HTTP/1.1", host: "192.168.220.110"
+2023/03/30 12:31:24 [warn] 44#44: conflicting server name "" on 0.0.0.0:80, ignored
+2023/03/30 12:31:24 [warn] 44#44: conflicting server name "" on 0.0.0.0:80, ignored
+2023/03/30 12:31:24 [notice] 44#44: signal process started
+2023/03/30 12:31:24 [notice] 1#1: signal 1 (SIGHUP) received from 44, reconfiguring
+2023/03/30 12:31:24 [notice] 1#1: reconfiguring
+2023/03/30 12:31:24 [warn] 1#1: conflicting server name "" on 0.0.0.0:80, ignored
+2023/03/30 12:31:24 [warn] 1#1: conflicting server name "" on 0.0.0.0:80, ignored
+2023/03/30 12:31:24 [notice] 1#1: using the "epoll" event method
+2023/03/30 12:31:24 [notice] 1#1: start worker processes
+2023/03/30 12:31:24 [notice] 1#1: start worker process 45
+2023/03/30 12:31:24 [notice] 22#22: gracefully shutting down
+2023/03/30 12:31:24 [notice] 22#22: exiting
+2023/03/30 12:31:24 [notice] 22#22: exit
+2023/03/30 12:31:24 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/03/30 12:31:24 [notice] 1#1: worker process 22 exited with code 0
+2023/03/30 12:31:24 [notice] 1#1: signal 29 (SIGIO) received
+2023/03/30 12:32:46 [warn] 52#52: conflicting server name "" on 0.0.0.0:80, ignored
+2023/03/30 12:32:46 [notice] 52#52: signal process started
+2023/03/30 12:32:46 [notice] 1#1: signal 1 (SIGHUP) received from 52, reconfiguring
+2023/03/30 12:32:46 [notice] 1#1: reconfiguring
+2023/03/30 12:32:46 [warn] 1#1: conflicting server name "" on 0.0.0.0:80, ignored
+2023/03/30 12:32:46 [notice] 1#1: using the "epoll" event method
+2023/03/30 12:32:46 [notice] 1#1: start worker processes
+2023/03/30 12:32:46 [notice] 1#1: start worker process 53
+2023/03/30 12:32:46 [notice] 45#45: gracefully shutting down
+2023/03/30 12:32:46 [notice] 45#45: exiting
+2023/03/30 12:32:46 [notice] 45#45: exit
+2023/03/30 12:32:46 [notice] 1#1: signal 17 (SIGCHLD) received from 45
+2023/03/30 12:32:46 [notice] 1#1: worker process 45 exited with code 0
+2023/03/30 12:32:46 [notice] 1#1: signal 29 (SIGIO) received
+2023/03/30 12:33:24 [notice] 61#61: signal process started
+2023/03/30 12:33:24 [notice] 1#1: signal 1 (SIGHUP) received from 61, reconfiguring
+2023/03/30 12:33:24 [notice] 1#1: reconfiguring
+2023/03/30 12:33:24 [notice] 1#1: using the "epoll" event method
+2023/03/30 12:33:24 [notice] 1#1: start worker processes
+2023/03/30 12:33:24 [notice] 1#1: start worker process 62
+2023/03/30 12:33:24 [notice] 53#53: gracefully shutting down
+2023/03/30 12:33:24 [notice] 53#53: exiting
+2023/03/30 12:33:24 [notice] 53#53: exit
+2023/03/30 12:33:24 [notice] 1#1: signal 17 (SIGCHLD) received from 53
+2023/03/30 12:33:24 [notice] 1#1: worker process 53 exited with code 0
+2023/03/30 12:33:24 [notice] 1#1: signal 29 (SIGIO) received
+2023/03/30 12:33:41 [error] 62#62: *4 open() "/etc/nginx/html/avatar/512ea4e1-197f-47b6-af26-8dbad0e390a4.png" failed (2: No such file or directory), client: 192.168.220.1, server: avatar, request: "GET /avatar/512ea4e1-197f-47b6-af26-8dbad0e390a4.png HTTP/1.1", host: "192.168.220.110", referrer: "http://192.168.220.110:8080/"
+2023/03/30 12:34:15 [error] 62#62: *5 open() "/etc/nginx/html/avatar/512ea4e1-197f-47b6-af26-8dbad0e390a4.png" failed (2: No such file or directory), client: 192.168.220.1, server: avatar, request: "GET /avatar/512ea4e1-197f-47b6-af26-8dbad0e390a4.png HTTP/1.1", host: "192.168.220.110", referrer: "http://192.168.220.110:8080/"
+2023/03/30 12:35:52 [error] 62#62: *6 open() "/etc/nginx/html/avatar/512ea4e1-197f-47b6-af26-8dbad0e390a4.png" failed (2: No such file or directory), client: 192.168.220.1, server: avatar, request: "GET /avatar/512ea4e1-197f-47b6-af26-8dbad0e390a4.png HTTP/1.1", host: "192.168.220.110"
+2023/03/30 12:36:24 [error] 62#62: *6 open() "/etc/nginx/html/avatar/4f7b960a-61cf-465e-8b04-9b6a92168506.png" failed (2: No such file or directory), client: 192.168.220.1, server: avatar, request: "GET /avatar/4f7b960a-61cf-465e-8b04-9b6a92168506.png HTTP/1.1", host: "192.168.220.110", referrer: "http://192.168.220.110/avatar/"
+2023/03/30 12:36:27 [error] 62#62: *6 open() "/etc/nginx/html/avatar/512ea4e1-197f-47b6-af26-8dbad0e390a4.png" failed (2: No such file or directory), client: 192.168.220.1, server: avatar, request: "GET /avatar/512ea4e1-197f-47b6-af26-8dbad0e390a4.png HTTP/1.1", host: "192.168.220.110", referrer: "http://192.168.220.110/avatar/"
+2023/03/30 12:37:20 [error] 62#62: *6 open() "/etc/nginx/html/avatar/4f7b960a-61cf-465e-8b04-9b6a92168506.png" failed (2: No such file or directory), client: 192.168.220.1, server: avatar, request: "GET /avatar/4f7b960a-61cf-465e-8b04-9b6a92168506.png HTTP/1.1", host: "192.168.220.110", referrer: "http://192.168.220.110/avatar/"
+2023/03/30 12:37:25 [error] 62#62: *6 open() "/etc/nginx/html/avatar/4f7b960a-61cf-465e-8b04-9b6a92168506.png" failed (2: No such file or directory), client: 192.168.220.1, server: avatar, request: "GET /avatar/4f7b960a-61cf-465e-8b04-9b6a92168506.png HTTP/1.1", host: "192.168.220.110", referrer: "http://192.168.220.110/avatar/"
+2023/03/30 12:37:27 [error] 62#62: *6 open() "/etc/nginx/html/avatar/4f7b960a-61cf-465e-8b04-9b6a92168506.png" failed (2: No such file or directory), client: 192.168.220.1, server: avatar, request: "GET /avatar/4f7b960a-61cf-465e-8b04-9b6a92168506.png HTTP/1.1", host: "192.168.220.110", referrer: "http://192.168.220.110/avatar/"
+2023/03/30 12:38:11 [error] 62#62: *6 open() "/etc/nginx/html/avatar/4f7b960a-61cf-465e-8b04-9b6a92168506.png" failed (2: No such file or directory), client: 192.168.220.1, server: avatar, request: "GET /avatar/4f7b960a-61cf-465e-8b04-9b6a92168506.png HTTP/1.1", host: "192.168.220.110", referrer: "http://192.168.220.110/avatar/"
+2023/03/30 12:38:36 [error] 62#62: *6 open() "/etc/nginx/html/avatar/4f7b960a-61cf-465e-8b04-9b6a92168506.png" failed (2: No such file or directory), client: 192.168.220.1, server: avatar, request: "GET /avatar/4f7b960a-61cf-465e-8b04-9b6a92168506.png HTTP/1.1", host: "192.168.220.110", referrer: "http://192.168.220.110/avatar/"
+2023/03/30 12:38:37 [error] 62#62: *6 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.168.220.1, server: avatar, request: "GET /favicon.ico HTTP/1.1", host: "192.168.220.110", referrer: "http://192.168.220.110/avatar/4f7b960a-61cf-465e-8b04-9b6a92168506.png"
+2023/03/30 12:38:49 [error] 62#62: *6 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.168.220.1, server: avatar, request: "GET /favicon.ico HTTP/1.1", host: "192.168.220.110", referrer: "http://192.168.220.110/avatar/"
+2023/03/30 12:38:56 [error] 62#62: *6 open() "/etc/nginx/html/avatar/512ea4e1-197f-47b6-af26-8dbad0e390a4.png" failed (2: No such file or directory), client: 192.168.220.1, server: avatar, request: "GET /avatar/512ea4e1-197f-47b6-af26-8dbad0e390a4.png HTTP/1.1", host: "192.168.220.110", referrer: "http://192.168.220.110/avatar/"
+2023/03/30 12:38:58 [error] 62#62: *6 open() "/etc/nginx/html/avatar/4f7b960a-61cf-465e-8b04-9b6a92168506.png" failed (2: No such file or directory), client: 192.168.220.1, server: avatar, request: "GET /avatar/4f7b960a-61cf-465e-8b04-9b6a92168506.png HTTP/1.1", host: "192.168.220.110", referrer: "http://192.168.220.110/avatar/"
+2023/03/30 12:40:03 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/03/30 12:40:03 [notice] 62#62: gracefully shutting down
+2023/03/30 12:40:03 [notice] 62#62: exiting
+2023/03/30 12:40:03 [notice] 62#62: exit
+2023/03/30 12:40:03 [notice] 1#1: signal 17 (SIGCHLD) received from 62
+2023/03/30 12:40:03 [notice] 1#1: worker process 62 exited with code 0
+2023/03/30 12:40:03 [notice] 1#1: exit
+2023/03/30 12:40:03 [notice] 1#1: using the "epoll" event method
+2023/03/30 12:40:03 [notice] 1#1: nginx/1.23.3
+2023/03/30 12:40:03 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/03/30 12:40:03 [notice] 1#1: OS: Linux 3.10.0-1160.el7.x86_64
+2023/03/30 12:40:03 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/03/30 12:40:03 [notice] 1#1: start worker processes
+2023/03/30 12:40:03 [notice] 1#1: start worker process 22
+2023/03/30 12:56:36 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/03/30 12:56:36 [notice] 22#22: gracefully shutting down
+2023/03/30 12:56:36 [notice] 22#22: exiting
+2023/03/30 12:56:36 [notice] 22#22: exit
+2023/03/30 12:56:36 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/03/30 12:56:36 [notice] 1#1: worker process 22 exited with code 0
+2023/03/30 12:56:36 [notice] 1#1: exit
+2023/03/31 13:03:54 [notice] 1#1: using the "epoll" event method
+2023/03/31 13:03:54 [notice] 1#1: nginx/1.23.3
+2023/03/31 13:03:54 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/03/31 13:03:54 [notice] 1#1: OS: Linux 3.10.0-1160.el7.x86_64
+2023/03/31 13:03:54 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/03/31 13:03:54 [notice] 1#1: start worker processes
+2023/03/31 13:03:54 [notice] 1#1: start worker process 22
+2023/03/31 16:30:39 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/03/31 16:30:39 [notice] 22#22: gracefully shutting down
+2023/03/31 16:30:39 [notice] 22#22: exiting
+2023/03/31 16:30:39 [notice] 22#22: exit
+2023/03/31 16:30:39 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/03/31 16:30:39 [notice] 1#1: worker process 22 exited with code 0
+2023/03/31 16:30:39 [notice] 1#1: exit
+2023/04/01 05:10:06 [notice] 1#1: using the "epoll" event method
+2023/04/01 05:10:06 [notice] 1#1: nginx/1.23.3
+2023/04/01 05:10:06 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/04/01 05:10:06 [notice] 1#1: OS: Linux 3.10.0-1160.el7.x86_64
+2023/04/01 05:10:06 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/04/01 05:10:06 [notice] 1#1: start worker processes
+2023/04/01 05:10:06 [notice] 1#1: start worker process 22
+2023/04/01 15:17:56 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/04/01 15:17:56 [notice] 22#22: gracefully shutting down
+2023/04/01 15:17:56 [notice] 22#22: exiting
+2023/04/01 15:17:56 [notice] 22#22: exit
+2023/04/01 15:17:57 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/04/01 15:17:57 [notice] 1#1: worker process 22 exited with code 0
+2023/04/01 15:17:57 [notice] 1#1: exit
+2023/04/02 02:28:50 [notice] 1#1: using the "epoll" event method
+2023/04/02 02:28:50 [notice] 1#1: nginx/1.23.3
+2023/04/02 02:28:50 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/04/02 02:28:50 [notice] 1#1: OS: Linux 3.10.0-1160.el7.x86_64
+2023/04/02 02:28:50 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/04/02 02:28:50 [notice] 1#1: start worker processes
+2023/04/02 02:28:50 [notice] 1#1: start worker process 22
+2023/04/02 09:26:08 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/04/02 09:26:08 [notice] 22#22: gracefully shutting down
+2023/04/02 09:26:08 [notice] 22#22: exiting
+2023/04/02 09:26:08 [notice] 22#22: exit
+2023/04/02 09:26:08 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/04/02 09:26:08 [notice] 1#1: worker process 22 exited with code 0
+2023/04/02 09:26:08 [notice] 1#1: exit
+2023/04/02 09:26:09 [warn] 1#1: conflicting server name "" on 0.0.0.0:80, ignored
+2023/04/02 09:26:09 [notice] 1#1: using the "epoll" event method
+2023/04/02 09:26:09 [notice] 1#1: nginx/1.23.3
+2023/04/02 09:26:09 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/04/02 09:26:09 [notice] 1#1: OS: Linux 3.10.0-1160.el7.x86_64
+2023/04/02 09:26:09 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/04/02 09:26:09 [notice] 1#1: start worker processes
+2023/04/02 09:26:09 [notice] 1#1: start worker process 22
+2023/04/02 09:27:10 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/04/02 09:27:10 [notice] 22#22: gracefully shutting down
+2023/04/02 09:27:10 [notice] 22#22: exiting
+2023/04/02 09:27:10 [notice] 22#22: exit
+2023/04/02 09:27:10 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/04/02 09:27:10 [notice] 1#1: worker process 22 exited with code 0
+2023/04/02 09:27:10 [notice] 1#1: exit
+2023/04/02 09:27:11 [notice] 1#1: using the "epoll" event method
+2023/04/02 09:27:11 [notice] 1#1: nginx/1.23.3
+2023/04/02 09:27:11 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/04/02 09:27:11 [notice] 1#1: OS: Linux 3.10.0-1160.el7.x86_64
+2023/04/02 09:27:11 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/04/02 09:27:11 [notice] 1#1: start worker processes
+2023/04/02 09:27:11 [notice] 1#1: start worker process 22
+2023/04/02 09:32:44 [error] 22#22: *1 open() "/etc/nginx/html/comment/1.jpg" failed (2: No such file or directory), client: 192.168.220.1, server: avatar, request: "GET /comment/1.jpg HTTP/1.1", host: "192.168.220.110"
+2023/04/02 09:32:44 [error] 22#22: *1 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.168.220.1, server: avatar, request: "GET /favicon.ico HTTP/1.1", host: "192.168.220.110", referrer: "http://192.168.220.110/comment/1.jpg"
+2023/04/02 09:38:34 [error] 22#22: *3 open() "/etc/nginx/html/files/1.jpg" failed (2: No such file or directory), client: 192.168.220.1, server: avatar, request: "GET /files/1.jpg HTTP/1.1", host: "192.168.220.110"
+2023/04/02 09:41:03 [error] 22#22: *5 "/etc/nginx/html/files/index.html" is not found (2: No such file or directory), client: 192.168.220.1, server: avatar, request: "GET /files/ HTTP/1.1", host: "192.168.220.110"
+2023/04/02 09:41:10 [error] 22#22: *5 "/etc/nginx/html/files/index.html" is not found (2: No such file or directory), client: 192.168.220.1, server: avatar, request: "GET /files/ HTTP/1.1", host: "192.168.220.110"
+2023/04/02 09:41:20 [error] 22#22: *5 open() "/etc/nginx/html/comment" failed (2: No such file or directory), client: 192.168.220.1, server: avatar, request: "GET /comment HTTP/1.1", host: "192.168.220.110"
+2023/04/02 09:41:29 [error] 22#22: *5 "/etc/nginx/html/comment/index.html" is not found (2: No such file or directory), client: 192.168.220.1, server: avatar, request: "GET /comment/ HTTP/1.1", host: "192.168.220.110"
+2023/04/02 09:43:20 [error] 22#22: *7 "/etc/nginx/html/files/index.html" is not found (2: No such file or directory), client: 192.168.220.1, server: avatar, request: "GET /files/ HTTP/1.1", host: "192.168.220.110"
+2023/04/02 09:44:22 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/04/02 09:44:22 [notice] 22#22: gracefully shutting down
+2023/04/02 09:44:22 [notice] 22#22: exiting
+2023/04/02 09:44:22 [notice] 22#22: exit
+2023/04/02 09:44:22 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/04/02 09:44:22 [notice] 1#1: worker process 22 exited with code 0
+2023/04/02 09:44:22 [notice] 1#1: exit
+2023/04/02 09:44:22 [notice] 1#1: using the "epoll" event method
+2023/04/02 09:44:22 [notice] 1#1: nginx/1.23.3
+2023/04/02 09:44:22 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/04/02 09:44:22 [notice] 1#1: OS: Linux 3.10.0-1160.el7.x86_64
+2023/04/02 09:44:22 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/04/02 09:44:22 [notice] 1#1: start worker processes
+2023/04/02 09:44:22 [notice] 1#1: start worker process 22
+2023/04/02 09:44:27 [error] 22#22: *1 "/etc/nginx/html/files/index.html" is not found (2: No such file or directory), client: 192.168.220.1, server: avatar, request: "GET /files/ HTTP/1.1", host: "192.168.220.110"
+2023/04/02 09:44:28 [error] 22#22: *1 "/etc/nginx/html/files/index.html" is not found (2: No such file or directory), client: 192.168.220.1, server: avatar, request: "GET /files/ HTTP/1.1", host: "192.168.220.110"
+2023/04/02 09:44:46 [notice] 23#23: signal process started
+2023/04/02 09:44:46 [notice] 1#1: signal 1 (SIGHUP) received from 23, reconfiguring
+2023/04/02 09:44:46 [notice] 1#1: reconfiguring
+2023/04/02 09:44:46 [notice] 1#1: using the "epoll" event method
+2023/04/02 09:44:46 [notice] 1#1: start worker processes
+2023/04/02 09:44:46 [notice] 1#1: start worker process 29
+2023/04/02 09:44:46 [notice] 22#22: gracefully shutting down
+2023/04/02 09:44:57 [error] 22#22: *2 "/etc/nginx/html/files/index.html" is not found (2: No such file or directory), client: 192.168.220.1, server: avatar, request: "GET /files/ HTTP/1.1", host: "192.168.220.110"
+2023/04/02 09:44:57 [notice] 22#22: exiting
+2023/04/02 09:44:57 [notice] 22#22: exit
+2023/04/02 09:44:57 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/04/02 09:44:57 [notice] 1#1: worker process 22 exited with code 0
+2023/04/02 09:44:57 [notice] 1#1: signal 29 (SIGIO) received
+2023/04/02 09:44:58 [error] 29#29: *3 "/etc/nginx/html/files/index.html" is not found (2: No such file or directory), client: 192.168.220.1, server: avatar, request: "GET /files/ HTTP/1.1", host: "192.168.220.110"
+2023/04/02 09:49:02 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/04/02 09:49:02 [notice] 29#29: gracefully shutting down
+2023/04/02 09:49:02 [notice] 29#29: exiting
+2023/04/02 09:49:02 [notice] 29#29: exit
+2023/04/02 09:49:02 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2023/04/02 09:49:02 [notice] 1#1: worker process 29 exited with code 0
+2023/04/02 09:49:02 [notice] 1#1: exit
+2023/04/02 09:49:02 [notice] 1#1: using the "epoll" event method
+2023/04/02 09:49:02 [notice] 1#1: nginx/1.23.3
+2023/04/02 09:49:02 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/04/02 09:49:02 [notice] 1#1: OS: Linux 3.10.0-1160.el7.x86_64
+2023/04/02 09:49:02 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/04/02 09:49:02 [notice] 1#1: start worker processes
+2023/04/02 09:49:02 [notice] 1#1: start worker process 22
+2023/04/02 09:50:19 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/04/02 09:50:19 [notice] 22#22: gracefully shutting down
+2023/04/02 09:50:19 [notice] 22#22: exiting
+2023/04/02 09:50:19 [notice] 22#22: exit
+2023/04/02 09:50:19 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/04/02 09:50:19 [notice] 1#1: worker process 22 exited with code 0
+2023/04/02 09:50:19 [notice] 1#1: exit
+2023/04/02 09:50:19 [notice] 1#1: using the "epoll" event method
+2023/04/02 09:50:19 [notice] 1#1: nginx/1.23.3
+2023/04/02 09:50:19 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/04/02 09:50:19 [notice] 1#1: OS: Linux 3.10.0-1160.el7.x86_64
+2023/04/02 09:50:19 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/04/02 09:50:19 [notice] 1#1: start worker processes
+2023/04/02 09:50:19 [notice] 1#1: start worker process 22
+2023/04/02 15:53:39 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/04/02 15:53:39 [notice] 22#22: gracefully shutting down
+2023/04/02 15:53:39 [notice] 22#22: exiting
+2023/04/02 15:53:39 [notice] 22#22: exit
+2023/04/02 15:53:39 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/04/02 15:53:39 [notice] 1#1: worker process 22 exited with code 0
+2023/04/02 15:53:39 [notice] 1#1: exit
+2023/04/03 01:17:33 [notice] 1#1: using the "epoll" event method
+2023/04/03 01:17:33 [notice] 1#1: nginx/1.23.3
+2023/04/03 01:17:33 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/04/03 01:17:33 [notice] 1#1: OS: Linux 3.10.0-1160.el7.x86_64
+2023/04/03 01:17:33 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/04/03 01:17:33 [notice] 1#1: start worker processes
+2023/04/03 01:17:33 [notice] 1#1: start worker process 22
+2023/04/03 13:33:00 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/04/03 13:33:01 [notice] 22#22: gracefully shutting down
+2023/04/03 13:33:01 [notice] 22#22: exiting
+2023/04/03 13:33:01 [notice] 22#22: exit
+2023/04/03 13:33:01 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/04/03 13:33:01 [notice] 1#1: worker process 22 exited with code 0
+2023/04/03 13:33:01 [notice] 1#1: exit
+2023/04/04 08:14:51 [notice] 1#1: using the "epoll" event method
+2023/04/04 08:14:51 [notice] 1#1: nginx/1.23.3
+2023/04/04 08:14:51 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/04/04 08:14:51 [notice] 1#1: OS: Linux 3.10.0-1160.el7.x86_64
+2023/04/04 08:14:51 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/04/04 08:14:51 [notice] 1#1: start worker processes
+2023/04/04 08:14:51 [notice] 1#1: start worker process 22
+2023/04/04 17:02:13 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/04/04 17:02:13 [notice] 22#22: gracefully shutting down
+2023/04/04 17:02:13 [notice] 22#22: exiting
+2023/04/04 17:02:13 [notice] 22#22: exit
+2023/04/04 17:02:13 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/04/04 17:02:13 [notice] 1#1: worker process 22 exited with code 0
+2023/04/04 17:02:13 [notice] 1#1: exit
+2023/04/05 02:58:28 [notice] 1#1: using the "epoll" event method
+2023/04/05 02:58:28 [notice] 1#1: nginx/1.23.3
+2023/04/05 02:58:28 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/04/05 02:58:28 [notice] 1#1: OS: Linux 3.10.0-1160.el7.x86_64
+2023/04/05 02:58:28 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/04/05 02:58:28 [notice] 1#1: start worker processes
+2023/04/05 02:58:28 [notice] 1#1: start worker process 22
+2023/04/05 15:22:07 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/04/05 15:22:07 [notice] 22#22: gracefully shutting down
+2023/04/05 15:22:07 [notice] 22#22: exiting
+2023/04/05 15:22:07 [notice] 22#22: exit
+2023/04/05 15:22:07 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/04/05 15:22:07 [notice] 1#1: worker process 22 exited with code 0
+2023/04/05 15:22:07 [notice] 1#1: exit
+2023/04/06 13:11:35 [notice] 1#1: using the "epoll" event method
+2023/04/06 13:11:35 [notice] 1#1: nginx/1.23.3
+2023/04/06 13:11:35 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/04/06 13:11:35 [notice] 1#1: OS: Linux 3.10.0-1160.el7.x86_64
+2023/04/06 13:11:35 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/04/06 13:11:35 [notice] 1#1: start worker processes
+2023/04/06 13:11:35 [notice] 1#1: start worker process 21
+2023/04/06 13:11:35 [notice] 1#1: start worker process 22
+2023/04/06 13:33:13 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/04/06 13:33:13 [notice] 21#21: gracefully shutting down
+2023/04/06 13:33:13 [notice] 21#21: exiting
+2023/04/06 13:33:13 [notice] 21#21: exit
+2023/04/06 13:33:13 [notice] 22#22: gracefully shutting down
+2023/04/06 13:33:13 [notice] 22#22: exiting
+2023/04/06 13:33:13 [notice] 22#22: exit
+2023/04/06 13:33:13 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/04/06 13:33:13 [notice] 1#1: worker process 22 exited with code 0
+2023/04/06 13:33:13 [notice] 1#1: signal 29 (SIGIO) received
+2023/04/06 13:33:13 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/04/06 13:33:13 [notice] 1#1: worker process 21 exited with code 0
+2023/04/06 13:33:13 [notice] 1#1: exit
+2023/04/07 01:50:11 [notice] 1#1: using the "epoll" event method
+2023/04/07 01:50:11 [notice] 1#1: nginx/1.23.3
+2023/04/07 01:50:11 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/04/07 01:50:11 [notice] 1#1: OS: Linux 3.10.0-1160.el7.x86_64
+2023/04/07 01:50:11 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/04/07 01:50:11 [notice] 1#1: start worker processes
+2023/04/07 01:50:11 [notice] 1#1: start worker process 22
+2023/04/07 01:50:11 [notice] 1#1: start worker process 23
