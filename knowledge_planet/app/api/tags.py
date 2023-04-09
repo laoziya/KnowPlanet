@@ -38,7 +38,7 @@ def get_course_tags(course_id):
     if not course:
         return jsonify({'error': 'Course does not exist'}), 404
 
-    tags = Tag.query.filter(course_id == course_id).all()
+    tags = Tag.query.filter(Tag.course_id == course_id).all()
     tag_list = [{'id': tag.id, 'name': tag.name} for tag in tags]
     return jsonify({'tags': tag_list})
 

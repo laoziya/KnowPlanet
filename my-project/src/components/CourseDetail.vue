@@ -174,18 +174,6 @@ export default {
         console.error(error);
       }
     },
-    async addTag() {
-      try {
-        const response = await axios.post(`${config.apiHost}/tags`, {
-          name: this.newTag,
-        });
-        const newTag = response.data;
-        this.tags.push(newTag);
-        this.newTag = "";
-      } catch (error) {
-        console.error(error);
-      }
-    },
     async addTopic() {
       try {
         const response = await axios.post(`${config.apiHost}/topics`, {
@@ -283,6 +271,7 @@ export default {
   min-height: 900px;
 }
 
+/*侧边栏*/
 .sidebar {
   position: fixed;
   left: 0;
@@ -322,6 +311,7 @@ a {
   display: flex;
   margin: 0px 5px 0px 8px;
   align-items: center;
+  user-select: none; /* 禁止光标变成输入形式 */
 }
 
 .sidebar-nav li .name {

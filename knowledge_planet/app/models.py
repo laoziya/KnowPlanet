@@ -55,6 +55,10 @@ class Topic(db.Model):
     content = db.Column(db.Text)
     create_time = db.Column(db.DateTime, default=db.func.current_timestamp())
     update_time = db.Column(db.DateTime, default=db.func.current_timestamp(), onupdate=db.func.current_timestamp())
+    # 定义外键关联和级联删除
+    topic_tags = db.relationship('TopicTag', backref='topic', cascade='all, delete-orphan')
+    comments = db.relationship('Comment', backref='topic', cascade='all, delete-orphan')
+
     def to_dict(self):
         return {
             'id': self.id,
@@ -102,6 +106,8 @@ class Tag(db.Model):
     # 创建外键约束
     course = db.relationship('Course', backref=db.backref('tags', lazy=True))
     __table_args__ = (db.ForeignKeyConstraint([course_id], [Course.id]), {})
+    # 定义外键关联和级联删除
+    topic_tags = db.relationship('TopicTag', backref='tag', cascade='all, delete-orphan')
     
 
 class TopicTag(db.Model):
