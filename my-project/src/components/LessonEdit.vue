@@ -150,7 +150,11 @@ export default {
           editor.focus();
         }
       });
-      const url = `${myconfig.apiHost}/lessons/${this.$route.params.lesson_id}`;
+
+    });
+  },
+  created() {
+    const url = `${myconfig.apiHost}/lessons/${this.$route.params.lesson_id}`;
       axios
         .get(url)
         .then((response) => {
@@ -161,11 +165,11 @@ export default {
           // this.lessons = response.data;
           this.lessonName = response.data.name;
           this.quill.setContents(content);
+          console.log(this.lessonName)
         })
         .catch((error) => {
           console.log(error);
         });
-    });
   },
   methods: {
     getContentBlocks() {
@@ -442,4 +446,10 @@ export default {
   position: relative;
   width: 100%;
 }
+
+.ql-container img {
+  max-width: 500px;
+  max-height: 500px; 
+}
+
 </style>

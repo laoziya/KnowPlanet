@@ -24,6 +24,11 @@ def create_lesson(user_id):
     lesson = Lesson(course_id=course_id, name=name)
     db.session.add(lesson)
     db.session.commit()
+    lesson_id = lesson.id
+
+    paragraph = LessonParagraph(lesson_id=lesson_id, content='[内容为空]')
+    db.session.add(paragraph)
+    db.session.commit()
 
     return jsonify({'id': lesson.id}), 201
 

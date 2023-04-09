@@ -2,6 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import LessonDetail from './components/LessonDetail'
+import CourseDiscussion from './components/CourseDiscussion'
 
 
 // 全局导航守卫
@@ -33,6 +34,7 @@ router.beforeEach((to, from, next) => {
 
 const app=createApp(App).use(router)
 app.component('LessonDetail', LessonDetail)
+app.component('CourseDiscussion', CourseDiscussion)
 app.mount('#app')
 
 

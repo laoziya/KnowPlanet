@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "knowledge_planet"
+		},
+		{
+			"path": "my-project"
+		}
+	],
+	"settings": {
+               "python.defaultInterpreterPath": "/data/myproj_venv/bin/python"
+        }
+}

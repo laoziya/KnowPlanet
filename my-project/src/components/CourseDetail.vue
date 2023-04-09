@@ -56,75 +56,7 @@
         <p>{{ course.description }}</p>
       </div>
       <div class="discussion-container" v-if="showIndex">
-        <div class="labels-container">
-          <h3>标签</h3>
-          <div class="labels-list">
-            <span class="label">HTML</span>
-            <span class="label">CSS</span>
-            <span class="label">JavaScript</span>
-          </div>
-        </div>
-        <div class="topics-container">
-          <h3>话题</h3>
-          <div class="topics-list">
-            <div class="topic">
-              <div class="topic-header">
-                <span class="topic-title">如何实现一个简单的Vue组件？</span>
-                <div class="topic-meta">
-                  <span class="topic-author">张三</span>
-                  <span class="topic-time">3分钟前</span>
-                </div>
-              </div>
-              <div class="topic-content">
-                <p>
-                  我想要实现一个简单的Vue组件，但是不知道从哪里开始，请各位大佬指点迷津！
-                </p>
-              </div>
-              <div class="topic-actions">
-                <button class="btn btn-reply">
-                  <i class="fas fa-reply"></i>
-                  <span>回复</span>
-                </button>
-              </div>
-            </div>
-            <div class="topic">
-              <div class="topic-header">
-                <span class="topic-title">如何用CSS实现一个圆形按钮？</span>
-                <div class="topic-meta">
-                  <span class="topic-author">李四</span>
-                  <span class="topic-time">1小时</span>
-                  <span class="tag">CSS</span>
-                  <span class="tag">前端</span>
-                  <span class="tag">圆形按钮</span>
-                </div>
-                <div class="topic-content">
-                  <p>我想实现一个圆形按钮，应该怎么做？</p>
-                </div>
-              </div>
-              <div class="topic">
-                <div class="topic-header">
-                  <span class="topic-title">Vue组件间的通信方式有哪些？</span>
-                  <span class="tag">Vue</span>
-                  <span class="tag">前端</span>
-                  <span class="tag">组件通信</span>
-                </div>
-                <div class="topic-content">
-                  <p>我想知道Vue组件间通信的方式，求大佬解答！</p>
-                </div>
-              </div>
-            </div>
-            <div class="tags">
-              <h3>标签</h3>
-              <div class="tag-list">
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">JavaScript</span>
-                <span class="tag">Vue</span>
-                <span class="tag">React</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        <CourseDiscussion/>
       </div>
     </div>
     <div class="modal" v-if="showModal">
@@ -146,6 +78,7 @@
 import axios from "axios";
 import config from "@/config";
 import LessonDetail from '@/components/LessonDetail';
+import CourseDiscussion from '@/components/LessonDetail';
 
 export default {
   name: "CourseDetail",
@@ -155,6 +88,7 @@ export default {
       lessons: [],
       selectedLesson: "",
       LessonDetail,
+      CourseDiscussion,
       tags: [],
       topics: [],
       newTag: "",
@@ -522,4 +456,5 @@ ul {
   width: 100%;
   height: 500%;
 }
+
 </style>

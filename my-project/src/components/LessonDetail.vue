@@ -49,7 +49,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .lesson-header {
   display: flex;
   justify-content: space-between;
@@ -65,5 +65,9 @@ export default {
 .lesson-content {
   font-size: 16px;
   line-height: 1.8;
+}
+.lesson-content img {
+  max-width: 600px;
+  max-height: 600px;
 }
 </style>

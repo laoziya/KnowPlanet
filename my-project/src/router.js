@@ -6,7 +6,6 @@ import Profile from './components/ProfilePage'
 import CourseDetail from './components/CourseDetail'
 import LessonEdit from './components/LessonEdit'
 import CreateC from './components/CreateC'
-import LessonDetail from './components/LessonDetail'
 import { createRouter, createWebHistory } from 'vue-router'
 
 
@@ -51,11 +50,6 @@ const routes = [
     path: '/createc',
     name: 'createc',
     component: CreateC
-  },
-  {
-    path: '/course/:course_id/lesson/:lesson_id',
-    name: 'lessondetail',
-    component: LessonDetail
   },
 ]
   
