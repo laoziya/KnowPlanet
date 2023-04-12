@@ -2,7 +2,7 @@ from .topics import topics_bp
 from .courses import courses_bp
 from .topics import topics_bp
 from ..models import db, Tag, TopicTag, Course, Topic
-from flask import Blueprint, request, jsonify
+from flask import Blueprint, request, jsonify, url_for
 from .utils import auth_required
 
 
@@ -133,6 +133,33 @@ def get_topics_by_tag(tag_id):
     topics = db.session.query(Topic).join(TopicTag).filter(TopicTag.topic_id.in_(topic_ids)).all()
     return jsonify([topic.to_dict() for topic in topics])
 
+from flask import redirect
+
+from sqlalchemy import and_
+
+def search_topic_by_tags():
+    tag_ids = request.args.getlist('tag_id')
+    # 根据传入的标签id查询所有包含这些标签的topic
+    topics = Topic.query.join(TopicTag).filter(and_(*[TopicTag.tag_id == id for id in tag_ids])).all()
+    # 将结果转化为JSON格式返回给前端
+    return jsonify({'topics': [topic.to_dict() for topic in topics]})
+
+@auth_required
+def delete_topic_tag(topic_id, tag_id, user_id):
+    # 判断当前用户是否是此话题的创建者
+    topic = Topic.query.filter_by(id=topic_id).first()
+    if topic.user_id != user_id:
+        return jsonify({'code': 401, 'msg': '无权限操作'})
+
+    # 删除话题的某个标签
+    topic_tag = TopicTag.query.filter_by(topic_id=topic_id, tag_id=tag_id).first()
+    if topic_tag is not None:
+        db.session.delete(topic_tag)
+        db.session.commit()
+        return jsonify({'code': 200, 'msg': '删除成功'}), 200
+    else:
+        return jsonify({'code': 404, 'msg': '标签不存在'}), 404
+
 # @app.route('/topics/<int:topic_id>/tags', methods=['GET'])
 courses_bp.add_url_rule("/tags", view_func=create_tag, methods=["POST"])
 courses_bp.add_url_rule("/<int:course_id>/tags", view_func=get_course_tags, methods=["GET"])
@@ -141,3 +168,5 @@ topics_bp.add_url_rule("/<int:topic_id>/tags", view_func=get_topic_tags, methods
 tags_bp.add_url_rule("/<int:tag_id>", view_func=update_tag, methods=["PUT"])
 tags_bp.add_url_rule("/<int:tag_id>", view_func=delete_tag, methods=["DELETE"])
 topics_bp.add_url_rule("/tags/<int:tag_id>", view_func=get_topics_by_tag, methods=["GET"])
+topics_bp.add_url_rule("/<int:topic_id>/tag/<int:tag_id>", view_func=delete_topic_tag, methods=["DELETE"])
+topics_bp.add_url_rule("/search-by-tags", view_func=search_topic_by_tags, methods=["GET"])

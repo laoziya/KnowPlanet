@@ -13,6 +13,11 @@ from flask import url_for
 users_bp = Blueprint('users',__name__,url_prefix="/api/v1/users")
 
 
+@auth_required
+def check_permission(user_id):
+    if user_id:
+        return  jsonify({"message": "auth successful."}), 200
+
 def register():
     # 获取请求体中的用户名、邮箱、密码
     username = request.json.get("username")
@@ -158,3 +163,5 @@ users_bp.add_url_rule("/current", view_func=get_user_info, methods=["GET"])
 users_bp.add_url_rule("/<int:user_id>", view_func=get_specific_user_info, methods=["GET"])
 # 修改当前用户的信息
 users_bp.add_url_rule("/", view_func=update_user_info, methods=["PUT"])
+
+users_bp.add_url_rule("/check", view_func=check_permission, methods=["GET"])

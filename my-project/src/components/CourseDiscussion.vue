@@ -9,6 +9,7 @@
           backgroundColor: tag.bgColor,
           color: tag.fontColor,
         }"
+        @click="addFilterTag(tag)"
       >
         {{ tag.name }}
 
@@ -43,6 +44,30 @@
     </div>
 
     <div class="topic-container">
+      <div class="topic-card lable-filter" v-if="tag_all">
+        <div
+          class="tag-capsule"
+          v-for="(tag, index) in filterTags"
+          :key="index"
+          :style="{
+            backgroundColor: tag.bgColor,
+            color: tag.fontColor,
+          }"
+        >
+          {{ tag.name }}
+
+          <button
+            class="del-tag-btn"
+            @click="removeTagFromFilter(tag.id)"
+            :style="{
+              color: tag.fontColor,
+            }"
+          >
+            ×
+          </button>
+        </div>
+      </div>
+
       <div class="topic-card" v-for="(topic, index) in topics" :key="index">
         <div class="topic-info">
           <a class="topic-title">{{ topic.title }}</a>
@@ -56,7 +81,7 @@
           </a>
         </div>
         <div class="topic-comments">
-          <a :href="`/topics/${topic.id}/comments`">评论</a>
+          <a :href="`/topics/${topic.id}/comments`"><i class="comment-icon"/></a>
         </div>
 
         <div
@@ -98,10 +123,11 @@
               v-model="tagName"
               @keydown.enter="addTagToTopic"
             />
-            <button class="add-tag-to-topic" @click="addTagToTopic">
-              <i class="create-tag-icon" />
-            </button>
+            
           </div>
+        </div>
+        <div class="del-topic" @click="delTopic(topic.id)">
+          <i class="del-topic-icon" />
         </div>
       </div>
 
@@ -150,6 +176,7 @@ export default {
     return {
       tags: [], // 所有标签
       topics: [], // 所有话题
+      filterTags: [],
       bgColor: "",
       currentTopicTags: [],
       currentPage: 1, // 当前页码
@@ -189,12 +216,14 @@ export default {
         });
         const bgColor = this.randomColor();
         const fontColor = this.fontColor(bgColor);
-        this.tags.unshift({
+        this.tag_all = {
           id: 0,
           name: "all",
           bgColor: bgColor,
           fontColor: fontColor,
-        });
+        };
+        this.tags.unshift(this.tag_all);
+        this.filterTags.push(this.tag_all);
       });
     },
     getTopicTags(topic_id) {
@@ -218,6 +247,14 @@ export default {
           fontColor: fontColor,
         });
       });
+    },
+
+    addFilterTag(tag) {
+      this.filterTags.push(tag);
+    },
+
+    removeTagFromFilter(tagId) {
+      this.filterTags = this.filterTags.filter((tag) => tag.id !== tagId);
     },
 
     // 获取所有话题
@@ -403,6 +440,24 @@ export default {
       this.tagName = "";
     },
 
+    onDeleteFromTopicTag(tagId) {
+      const token = localStorage.getItem("token");
+      axios
+        .delete(`${config.apiHost}/topics/${this.currentTopicId}/tag/${tagId}`, {
+          headers: { Authorization: `${token}` },
+        })
+        .then(() => {
+          // 在前端删除此标签
+          const tagIndex = this.currentTopicTags.findIndex((tag) => tag.id === tagId);
+          if (tagIndex !== -1) {
+            this.currentTopicTags.splice(tagIndex, 1);
+          }
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
+
     computed: {
       changePage(page) {
         if (page === -1 && this.currentPage > 1) {
@@ -432,6 +487,42 @@ export default {
   mounted() {
     this.getTags();
     this.getTopics();
+  },
+  created() {
+    this.$watch(
+      "filterTags",
+      (newVal) => {
+        if (newVal.length === 0) {
+          this.getTopics();
+          return;
+        }
+        if (newVal.length === 1 && newVal[0].id === 0) {
+          this.getTopics();
+          return;
+        }
+
+        // 构造请求 URL
+        let url = `${config.apiHost}/topics/search-by-tags`;
+        let tagIds = newVal
+          .filter((tag) => tag.id !== 0)
+          .map((tag) => `tag_id=${tag.id}`)
+          .join("&");
+        if (tagIds) {
+          url += `?${tagIds}`;
+        }
+
+        // 发送请求获取 topics 数据
+        axios
+          .get(url)
+          .then((response) => {
+            this.topics = response.data.topics;
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      },
+      { deep: true }
+    );
   },
 };
 </script>
@@ -527,6 +618,9 @@ export default {
   margin-top: 50px;
 }
 
+.topic-container .tag-capsule {
+  font-size: 10px;
+}
 /*话题*/
 .topic-card {
   display: flex;
@@ -534,6 +628,7 @@ export default {
   border: 0.5px solid #ccc;
   padding: 10px;
   margin-top: -1px;
+  justify-content: flex-start;
 }
 
 /*话题标题和创建日期的容器*/
@@ -552,9 +647,12 @@ export default {
 
 /*topic中显示的标签按钮容器*/
 .labels {
+  display: flex;
   flex: 1 0 15%;
   margin-right: 5%;
   outline: none;
+  margin-left: auto;
+  align-items: center;
 }
 
 /*标签按钮容器中的a标签*/
@@ -587,6 +685,23 @@ export default {
   flex: 1 0 10%;
   margin-left: auto;
   align-items: center;
+}
+
+.comment-icon {
+  display: flex;
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../assets/comment1.svg");
+  margin: 5px;
+},
+
+.topic-container .lable-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .del-topic {
@@ -655,5 +770,8 @@ export default {
   background-color: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   z-index: 2; /* 覆盖在其他元素之上 */
+}
+.label-window .create-tag {
+  width: 80%;
 }
 </style>
